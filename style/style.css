@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background: linear-gradient(white, black);
+}
+
+header{
+    background: black;
+    width: 100%;
+    height: 2vw;
+    position: relative;
+    padding: 100px;
+    justify-content: center;
+}   
+header .imagem1 img{
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    height: 60%;
+    width: 20%;
+    top: 5%;
+}
+
+nav{
+    background: black;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    position: -webkit-sticky;
+    z-index: 999;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    margin: 4%;
+
+}
+.card{
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50,50,50,0.22);
+    padding: 30px;
+    margin: 30px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+}
+.card:hover{
+    transform: translate(-5px);
+    cursor:pointer;
+    }
+    .card p{
+        color: #d9dbe0;
+        font-size: 16px;
+    }
+    .image{
+        max-width: 150px;
+        max-height: 150px;
+    }
+    .azul{
+        border-left: 3px solid blue;
+        
+    }
+    .verde{
+        border-left: 3px solid green;
+    }
+    .laranja{
+        border-left: 3px solid orangered;
+    }
+    .preto{
+        border-left: 3px solid black;
+    }
+    .python{
+        font-weight: 600;
+        top: 54.5%;
+        left: 200px;
+        max-width: 60%;
+
+    }
+    .html{
+        font-weight: 600;
+        top: 54.5%;
+        left: 200px;
+        max-width: 35%;
+
+    }
+    .go{
+        font-weight: 600;
+        top: 54.5%;
+        left: 200px;
+        max-width: 55%;
+
+    }
+    .node{
+        font-weight: 600;
+        top: 54.5%;
+        left: 200px;
+        max-width: 50%;
+
+    }
+    
+
+footer{
+
+    background-color: rgb(8, 8, 8);
+    width: 100%;
+
+}
+footer img{
+    height: 69.4px;
+    width: 100%;
+
+}
+
+@media (max-width: 1200px){
+    .row{
+        flex-direction: column;
+    }
+    header .imagem1{
+        display: none;
+    }
+    header .imagem2{
+        display: none;
+    }
+
+}
